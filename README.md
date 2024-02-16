@@ -47,14 +47,6 @@ To run gs-Proxy, use the following command:
 
 ```go
 
-package main
-
-import (
-    "fmt"
-    "net/http"
-    "io/ioutil"
-)
-
 func main() {
     resp, err := http.Get("http://localhost:8080/GET/####") // or "mykey"
     if err != nil {
