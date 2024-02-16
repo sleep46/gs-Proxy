@@ -56,7 +56,7 @@ import (
 )
 
 func main() {
-    resp, err := http.Get("http://localhost:8080/GET/mykey")
+    resp, err := http.Get("http://localhost:8080/GET/####") // or "mykey"
     if err != nil {
         fmt.Println("GET request failed:", err)
         return
