@@ -56,7 +56,6 @@ import (
 )
 
 func main() {
-    // Make GET request to gs-Proxy
     resp, err := http.Get("http://localhost:8080/GET/mykey")
     if err != nil {
         fmt.Println("Error making GET request:", err)
@@ -64,14 +63,13 @@ func main() {
     }
     defer resp.Body.Close()
 
-    // Read response body
     body, err := ioutil.ReadAll(resp.Body)
     if err != nil {
         fmt.Println("Error reading response body:", err)
         return
     }
 
-    fmt.Println("Response:", string(body))
+    fmt.Println("rresponse:", string(body))
 }
 ```
 
