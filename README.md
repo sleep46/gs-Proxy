@@ -58,18 +58,18 @@ import (
 func main() {
     resp, err := http.Get("http://localhost:8080/GET/mykey")
     if err != nil {
-        fmt.Println("Error making GET request:", err)
+        fmt.Println("GET request failed:", err)
         return
     }
     defer resp.Body.Close()
 
     body, err := ioutil.ReadAll(resp.Body)
     if err != nil {
-        fmt.Println("Error reading response body:", err)
+        fmt.Println("response body failed:", err)
         return
     }
 
-    fmt.Println("rresponse:", string(body))
+    fmt.Println("Response:", string(body))
 }
 ```
 
