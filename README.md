@@ -43,9 +43,9 @@ go get github.com/sleep46/gs-Proxy/redis@latest
 go get github.com/sleep46/gs-Proxy/server@latest
 ```
 
-This will download the required modules and add them to your `go.mod` file.
+This will download the required modules and add them to the `go.mod` file
 
-Once you've added the necessary dependencies, you can try running your `main.go` file  using `go run main.go`
+Once you've added the necessary dependencies, you can try running the `main.go` file  using `go run main.go`
 
 
 ### Configuration
