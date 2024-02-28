@@ -26,6 +26,28 @@ cd gs-Proxy
 make build
 ```
 
+
+
+```
+go mod init gs-Proxy
+```
+
+After initializing the module, you can install the required dependencies using `go get` with `@latest` version. For example:
+
+```
+go get github.com/joho/godotenv@latest
+go get github.com/sleep46/gs-Proxy/cache@latest
+go get github.com/sleep46/gs-Proxy/config@latest
+go get github.com/sleep46/gs-Proxy/proxy@latest
+go get github.com/sleep46/gs-Proxy/redis@latest
+go get github.com/sleep46/gs-Proxy/server@latest
+```
+
+This will download the required modules and add them to your `go.mod` file.
+
+Once you've added the necessary dependencies, you can try running your `main.go` file  using `go run main.go`
+
+
 ### Configuration
 
 Configuration options can be set using environment variables:
