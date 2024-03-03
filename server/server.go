@@ -36,7 +36,7 @@ func NewServer(port int, p *proxy.Proxy) *http.Server {
 }
 
 func (s *Server) handleRoot(w http.ResponseWriter, r *http.Request) {
-	response := "Welcome to gs-Proxy!\n\n"
+	response := "Welcome to gs-Proxy <> ver_1.0\n\n"
 	response += "Usage:\n"
 	response += "GET /: Displays usage and configuration settings\n"
 	response += "GET /GET/{key}: Returns the value associated with the provided key\n"
